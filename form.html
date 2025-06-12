@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complete Form with Patterns - Women's Health</title>
+</head>
+<body>
+
+  <video autoplay loop muted playsinline 
+         style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    <source src="./istockphoto-2204398876-640_adpp_is.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div style="background-color: rgba(0, 0, 0, 0.393); padding: 40px; max-width: 800px; margin: auto; color: white;">
+
+    <header style="text-align: center;">
+      <h1>Women's Health Community - Full Registration Form</h1>
+      <p>Please fill in the form to help us understand your needs.</p>
+    </header>
+
+    <nav style="text-align: center; margin-bottom: 20px;">
+      <a href="index.html" style="color: yellow; margin-right: 15px;">Back to Home</a>
+      <a href="form.html" style="color: yellow;">Full Form</a>
+    </nav>
+
+    <main>
+      <form action="#" method="post">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{3,50}" 
+               title="Name should contain only letters and spaces (min 3 characters)." style="width: 100%;"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required style="width: 100%;"><br><br>
+
+        <label for="password">Create a Password:</label><br>
+        <input type="password" id="password" name="password" required 
+               pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}" 
+               title="Password must be at least 6 characters, include letters and numbers." style="width: 100%;"><br><br>
+
+        <label for="age">Your Age:</label><br>
+        <input type="number" id="age" name="age" min="10" max="100" 
+               pattern="\d{2,3}" title="Enter a valid age between 10 and 100." style="width: 100%;"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" style="width: 100%;"><br><br>
+
+        <label for="appointment">Preferred Call Time:</label><br>
+        <input type="time" id="appointment" name="appointment" style="width: 100%;"><br><br>
+
+        <p>Do you have children?</p>
+        <input type="radio" id="yes" name="children" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="children" value="no">
+        <label for="no">No</label><br><br>
+
+        <p>Topics You're Interested In:</p>
+        <input type="checkbox" id="mental" name="topics" value="mental">
+        <label for="mental">Mental Health</label><br>
+        <input type="checkbox" id="nutrition" name="topics" value="nutrition">
+        <label for="nutrition">Nutrition</label><br>
+        <input type="checkbox" id="reproductive" name="topics" value="reproductive">
+        <label for="reproductive">Reproductive Health</label><br>
+        <input type="checkbox" id="pregnancy" name="topics" value="pregnancy">
+        <label for="pregnancy">Pregnancy Support</label><br><br>
+
+        <label for="location">Select Your Region:</label><br>
+        <select id="location" name="location" style="width: 100%;">
+          <option value="north">North</option>
+          <option value="south">South</option>
+          <option value="east">East</option>
+          <option value="west">West</option>
+        </select><br><br>
+
+        <label for="report">Upload Health Report (optional):</label><br>
+        <input type="file" id="report" name="report" style="width: 100%;"><br><br>
+
+        <label for="message">Your Message or Concern:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here..." 
+                  pattern=".{10,}" 
+                  title="Message must be at least 10 characters." style="width: 100%;"></textarea><br><br>
+
+        <label for="satisfaction">How satisfied are you with our platform? (1-10):</label><br>
+        <input type="test" id="satisfaction" name="satisfaction" min="1" max="10" style="width: 100%;"><br><br>
+
+        <input type="hidden" name="source" value="webform">
+
+        <div style="text-align: center;">
+          <button type="reset" style="margin-right: 10px;">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+
+      </form>
+    </main>
+
+    <footer style="text-align: center; margin-top: 40px;">
+      <p>&copy; 2025 Women's Health Awareness Platform. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
